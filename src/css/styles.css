@@ -43,6 +43,10 @@
   }
 }
 
+.is-hidden {
+  display: none;
+}
+
 .hero-home-container {
   padding: 0;
   width: 100%;
@@ -113,11 +117,11 @@
   fill: #ffffff;
 }
 
-.search-use {
+/* .search-use {
   width: 15px;
   height: 15px;
   fill: #ffffff;
-}
+} */
 
 /* ====================кнопки header================== */
 
@@ -222,5 +226,146 @@
   .hero-library-btn {
     width: 148px;
     height: 42px;
+  }
+}
+/* =================================================== */
+
+/* ==================================================== */
+/* .icon__btn {
+  background-color: transparent;
+  width: 14px;
+  height: 14px;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  position: relative;
+}
+.icon__btn::after {
+  content: '';
+  height: 9px;
+  border: 1px solid #ffff;
+  border-radius: 7px;
+  background-color: #ffff;
+  position: absolute;
+  right: -4px;
+  top: 7px;
+  transform: rotate(316deg);
+} */
+
+/* =================================================== */
+
+/* =============header-styles=========== */
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  /* background-color: rgb(80, 62, 62); */
+  /* // padding-top: 40px; */
+  /* // padding-bottom: 40px; */
+}
+@media screen and (min-width: 768px) {
+  .header {
+    min-width: 768px;
+  }
+  /* // padding-top: 45px; */
+}
+
+.header__wrap {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo__text {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .logo__text {
+    display: inline-block;
+    margin-left: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 0.857;
+    color: #ffffff;
+  }
+}
+
+.menu {
+  margin-left: auto;
+}
+
+.menu__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  align-items: center;
+}
+.menu__item:not(:last-child) {
+  margin-right: 39px;
+}
+.menu__btn {
+  /* // position: relative; */
+  padding: 0;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  /* // padding-bottom: 5px; */
+  /* // padding-top: 5px; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 0.85;
+  display: flex;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.current-page {
+  position: relative;
+}
+.current-page::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  background-color: #ff6b08;
+  border: 2px solid #ff6b08;
+  /* // border-radius: 2px; */
+}
+
+/* ===============общие стили=============== */
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  min-width: 320px;
+  height: 0px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1024px;
   }
 }

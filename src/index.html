@@ -10,17 +10,114 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./sass/index.scss" />
   </head>
   <body>
-    <section class="header">
-      <div class="button-wrap">
-        <button type="button" class="header-home-button btn">HOME</button>
-        <button type="button" class="header-library-button btn">LIBRARY</button>
+    <!-- ===========делаю heder=========== -->
+    <!-- <header class="header">
+      <div class="container">
+        <div class="header__wrap">
+          <a href="index.html" class="logo">
+            <svg class="menu-icon" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-logo"></use>
+            </svg>
+            <span class="logo__text">Filmoteka</span>
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <button id="home_btn" class="menu__btn">
+                  <span class="menu__btn__text current-page">Home</span>
+                </button>
+              </li>
+              <li class="menu__item">
+                <button id="library_btn" class="menu__btn">
+                  <span class="menu__btn__text">my library</span>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="hero-home-container">
+          <form class="search-form" id="search-form">
+            <div class="input-wrap">
+              <input
+                class="input"
+                type="text"
+                name="searchQuery"
+                autocomplete="off"
+                placeholder="Search films..."
+              />
+              <button class="button" type="submit">
+                <svg class="search" width="15" height="15">
+                  <use href="./images/symbol-defs.svg#icon-search"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="hero-library-container is-hidden">
+          <div class="library-btn-wrap">
+            <button class="hero-watched-button hero-library-btn" type="button">WATCHED</button>
+            <button class="hero-queue-button hero-library-btn" type="button">QUEUE</button>
+          </div>
+        </div>
       </div>
-    </section>
-    <section class="hero-home">
-      <!-- <div class="hero-home-container">
+    </header> -->
+    <!-- ============================================ -->
+
+    <!-- <header class="header"> -->
+    <!-- <div class="container"> -->
+    <!-- <div class="header__wrap">
+          <a href="index.html" class="logo">
+            <svg class="menu-icon" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-logo"></use>
+            </svg>
+            <span class="logo__text">Filmoteka</span>
+          </a> -->
+    <!-- <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <button id="home_btn" class="menu__btn">
+                  <span class="menu__btn__text current-page">Home</span>
+                </button>
+              </li>
+              <li class="menu__item">
+                <button id="library_btn" class="menu__btn">
+                  <span class="menu__btn__text">my library</span>
+                </button>
+              </li>
+            </ul>
+          </nav> -->
+    <!-- </div> -->
+    <div class="header-container">
+      <div class="header-nav">
+        <div class="header__wrap">
+          <a href="index.html" class="logo">
+            <svg class="menu-icon" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-logo"></use>
+            </svg>
+            <span class="logo__text">Filmoteka</span>
+          </a>
+        </div>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <button id="home_btn" class="menu__btn">
+                <span class="menu__btn__text current-page">Home</span>
+              </button>
+            </li>
+            <li class="menu__item">
+              <button id="library_btn" class="menu__btn">
+                <span class="menu__btn__text">my library</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="hero-home-container">
         <form class="search-form" id="search-form">
           <div class="input-wrap">
             <input
@@ -37,8 +134,75 @@
             </button>
           </div>
         </form>
-      </div> -->
-    </section>
+      </div>
+      <div class="hero-library-container is-hidden">
+        <div class="library-btn-wrap">
+          <button class="hero-watched-button hero-library-btn" type="button">WATCHED</button>
+          <button class="hero-queue-button hero-library-btn" type="button">QUEUE</button>
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+    <!-- </header> -->
+
+    <!-- ============================================ -->
+    <!-- <header class="header">
+      <div class="container">
+        <div class="header__wrap">
+          <a href="index.html" class="logo">
+            <svg class="menu-icon" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-logo"></use>
+            </svg>
+            <span class="logo__text">Filmoteka</span>
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <button class="menu__btn">
+                  <span class="menu__btn__text current-page">Home</span>
+                </button>
+              </li>
+              <li class="menu__item">
+                <button class="menu__btn"><span class="menu__btn__text">my library</span></button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header> -->
+
+    <!-- <section class="header">
+      <div class="button-wrap">
+        <button type="button" class="header-home-button btn">HOME</button>
+        <button type="button" class="header-library-button btn">LIBRARY</button>
+      </div>
+    </section> -->
+    <!-- <section class="hero-home">
+      <div class="hero-home-container">
+        <form class="search-form" id="search-form">
+          <div class="input-wrap">
+            <input
+              class="input"
+              type="text"
+              name="searchQuery"
+              autocomplete="off"
+              placeholder="Search films..."
+            />
+            <button class="button" type="submit">
+              <svg class="search" width="15" height="15">
+                <use href="./images/symbol-defs.svg#icon-search"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="hero-library-container is-hidden">
+        <div class="library-btn-wrap">
+          <button class="hero-watched-button hero-library-btn" type="button">WATCHED</button>
+          <button class="hero-queue-button hero-library-btn" type="button">QUEUE</button>
+        </div>
+      </div>
+    </section> -->
     <!-- <section class="hero-library">
       <div class="hero-library-container">
         <div class="library-btn-wrap">
@@ -47,6 +211,7 @@
         </div>
       </div>
     </section> -->
+
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
   </body>
