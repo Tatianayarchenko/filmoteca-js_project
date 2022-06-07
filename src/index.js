@@ -1,13 +1,11 @@
-// import heroHome from './templates/hero-home.hbs';
-// import heroLibrary from './templates/hero-library.hbs';
-// import svg from './images/symbol-defs.svg';
-
 const refs = {
-  //   hero: document.querySelector('.hero-home'),
-  logo: document.querySelector('.logo'),
+  header: document.querySelector('#header'),
+  //   logo: document.querySelector('#header-logo'),
   homeButton: document.querySelector('#home_btn'),
   libraryButton: document.querySelector('#library_btn'),
-  heroHomeContainer: document.querySelector('.hero-home-container'),
+  homeCurrentPage: document.querySelector('#home-current-page'),
+  libraryCurrentPage: document.querySelector('#library-current-page'),
+  searchForm: document.querySelector('#search-form'),
   heroLibraryContainer: document.querySelector('.hero-library-container'),
 };
 
@@ -16,18 +14,31 @@ refs.libraryButton.addEventListener('click', onLibraryPage);
 
 function onHomePage() {
   console.log('клик по кнопке HOME');
-  refs.heroHomeContainer.classList.remove('is-hidden');
-  refs.heroHomeContainer.classList.add('hero-home-container');
+  refs.searchForm.classList.remove('is-hidden');
+  //   refs.searchForm.classList.add('search-form');
   refs.heroLibraryContainer.classList.add('is-hidden');
+  refs.header.classList.remove('library');
+  refs.header.classList.add('home');
+  refs.homeCurrentPage.classList.add('current-page');
+  refs.libraryCurrentPage.classList.remove('current-page');
 }
 
 function onLibraryPage() {
   console.log('клик по кнопке Library');
-  //   renderLibraryPage();
+
+  refs.header.classList.remove('home');
+  refs.header.classList.add('library');
   refs.heroLibraryContainer.classList.remove('is-hidden');
-  refs.heroHomeContainer.classList.add('is-hidden');
+  refs.searchForm.classList.add('is-hidden');
   refs.heroLibraryContainer.classList.add('hero-library-container');
+  refs.homeCurrentPage.classList.remove('current-page');
+  refs.libraryCurrentPage.classList.add('current-page');
 }
+
+// function clearHero() {
+//   console.log('страница очистилась');
+//   refs.hero.innerHTML = '';
+// }
 
 // function renderHomePage() {
 //   clearHero();
@@ -53,17 +64,4 @@ function onLibraryPage() {
 //   refs.hero.insertAdjacentHTML('beforeend', heroHomeMarcup);
 // }
 
-// function renderLibraryPage() {
-//   console.log('нарисовали library');
-//   refs.hero.innerHTML = `<div class="hero-library-container">
-//         <div class="library-btn-wrap">
-//           <button class="hero-watched-button hero-library-btn" type="button">WATCHED</button>
-//           <button class="hero-queue-button hero-library-btn" type="button">QUEUE</button>
-//         </div>
-//       </div>`;
-// }
-
-// function clearHero() {
-//   console.log('страница очистилась');
-//   refs.hero.innerHTML = '';
-// }
+//

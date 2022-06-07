@@ -1,5 +1,34 @@
 @import './header';
 
+/* ===============общие стили=============== */
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  min-width: 320px;
+  //   height: 0px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1024px;
+  }
+}
+
+// ===========================================
+
 // .hero-home {
 //   margin-bottom: 20px;
 // }
@@ -111,16 +140,16 @@
   fill: #ffffff;
 } */
 /* ====================кнопки header================== */
-.button-wrap {
-  display: flex;
-  justify-content: center;
-}
+// .button-wrap {
+//   display: flex;
+//   justify-content: center;
+// }
 
-.header-home-button,
-.header-library-button {
-  border: none;
-  background-color: transparent;
-}
+// .header-home-button,
+// .header-library-button {
+//   border: none;
+//   background-color: transparent;
+// }
 /* ===================================================== */
 
 // .hero-library-container {
@@ -327,31 +356,4 @@
 //   background-color: #ff6b08;
 //   border: 2px solid #ff6b08;
 //   /* // border-radius: 2px; */
-// }
-
-/* ===============общие стили=============== */
-
-// .container {
-//   padding: 0 20px;
-//   margin: 0 auto;
-//   min-width: 320px;
-//   //   height: 0px;
-// }
-// @media screen and (min-width: 480px) {
-//   .container {
-//     width: 480px;
-//   }
-// }
-
-// @media screen and (min-width: 768px) {
-//   .container {
-//     width: 768px;
-//     padding: 0 32px;
-//   }
-// }
-
-// @media screen and (min-width: 1024px) {
-//   .container {
-//     width: 1024px;
-//   }
 // }
