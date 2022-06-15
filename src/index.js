@@ -1,3 +1,10 @@
+import { getGenres } from './api';
+import ApiMovie from './api';
+
+const apiMovie = new ApiMovie();
+getGenres();
+apiMovie.getPopularMovies();
+
 const refs = {
   header: document.querySelector('#header'),
   //   logo: document.querySelector('#header-logo'),
